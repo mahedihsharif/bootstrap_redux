@@ -1,8 +1,14 @@
 export interface ITask {
-  id: string;
+  _id: string;
   title: string;
   description: string;
   dueDate: string;
   isCompleted: boolean;
-  priority: "High" | "Medium" | "Low";
+  priority: "high" | "medium" | "low";
+  assignTo: string | null;
+}
+
+export interface IUser {
+  id: string;
+  username: string;
 }
